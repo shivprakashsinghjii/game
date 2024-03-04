@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%; /* Adjust based on your design */
+}
+
+.right-container {
+  flex: 1;
+  padding: 20px;
+ 
+  max-width: 50%; /* Adjust based on your design */
+}
+
+/* Dropdown styles */
+select {
+  margin-bottom: 15px; /* Adjust the gap between dropdown lists */
+  width: calc(100% - 20px); /* Adjust based on padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #00b7ff;
+}
+
+/* Button styles */
+.purchase-btn {
+  display: block;
+  width: calc(100% - 20px); /* Adjust based on padding */
+  margin-top: 15px; /* Add margin between dropdowns and button */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9100;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.purchase-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Right container styles */
+.digital-edition {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.letters {
+  font-size: 36px;
+  color: #ffffff; /* Change color as needed */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    max-width: 100%;
+  }
+
+  select,
+  .purchase-btn {
+    width: 100%;
+  }
+}
